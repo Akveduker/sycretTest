@@ -1,14 +1,21 @@
 .container {
-  margin-left: 104px;
+  margin: 80px 60px 0 44px;
 }
+
 @media (max-width: 1366px) {
   .container {
-    margin-left: 76px;
+    margin: 50px 60px 0 44px;
   }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .container {
-    margin-left: 0;
+    margin: 35px 14px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 35px 0 0;
   }
 }
