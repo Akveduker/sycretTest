@@ -1,0 +1,31 @@
+@import "styles/vars";
+.skeleton {
+  background-color: #edeff3;
+  position: relative;
+  overflow: hidden;
+  &__animation {
+    position: absolute;
+    top: 0;
+    width: 341px;
+    height: 100%;
+    background: linear-gradient(
+        270deg,
+        rgba(237, 239, 243, 0.51) 6.03%,
+        rgba(237, 239, 243, 0.51) 6.04%,
+        rgba(226, 227, 229, 0.88) 47.9%,
+        rgba(237, 239, 243, 0.51) 92.46%,
+        rgba(237, 239, 243, 0.51) 92.46%
+      ),
+      #edeff3;
+    animation: skeleton 1.5s ease infinite;
+  }
+}
+
+@keyframes skeleton {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}

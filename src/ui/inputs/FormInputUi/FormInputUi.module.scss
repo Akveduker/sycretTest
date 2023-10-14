@@ -1,0 +1,21 @@
+@import "styles/vars";
+.input {
+  padding: 18px 14px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 10px;
+  width: 100%;
+  border: 0.7px solid $darkPurple;
+  box-sizing: border-box;
+  &:focus {
+    border: 2px solid $lightPurple !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    padding: 10.5px 14px;
+  }
+}
+@media (max-width: 360px) {
+}

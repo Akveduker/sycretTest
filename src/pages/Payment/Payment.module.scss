@@ -1,0 +1,22 @@
+.container {
+  margin-top: 28vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loader {
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .loader {
+    max-width: 90px;
+  }
+}
+@media (max-width: 360px) {
+  .loader {
+    max-width: 80px;
+  }
+}

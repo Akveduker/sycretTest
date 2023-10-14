@@ -1,0 +1,20 @@
+@import "styles/styles";
+.button {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 10px;
+  background-color: $lightPurple;
+  color: $grayWhiteTextColor;
+  transition: all 0.3s ease;
+  @include fontMedium;
+  &:hover {
+    background-color: $purple;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 20px;
+    border-radius: 6px;
+  }
+}

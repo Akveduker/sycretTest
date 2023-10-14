@@ -1,0 +1,80 @@
+.page {
+  position: relative;
+}
+.title {
+  margin-bottom: 60px;
+  padding-left: 16px;
+}
+.container {
+  display: flex;
+  padding-left: 16px;
+  &__certificate {
+    width: 100%;
+    margin-right: 72px;
+    max-width: 840px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 398px;
+  }
+}
+.back-button {
+  padding-left: 16px;
+  width: 100%;
+  max-width: 133px;
+  margin-top: 127px;
+}
+
+@media (max-width: 1366px) {
+  .title {
+    margin-bottom: 40px;
+  }
+  .container {
+    &__certificate {
+      margin-right: 50px;
+      max-width: 668px;
+      min-width: 450px;
+    }
+    &__content {
+      padding-right: 16px;
+    }
+  }
+  .back-button {
+    width: 100%;
+    max-width: 133px;
+    margin-top: 62px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    padding: 0 16px;
+  }
+  .container {
+    padding: 0 16px 16px;
+    flex-direction: column;
+    &__certificate {
+      margin: 0 0 25px 0;
+      min-width: initial;
+    }
+    &__content {
+      padding: 0;
+    }
+  }
+  .back-button {
+    box-sizing: content-box;
+    padding: 0 16px;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    width: 133px;
+  }
+}
+@media (max-width: 590px) {
+  .back-button {
+    position: static;
+    width: 133px;
+    margin-top: 66px;
+  }
+}
+@media (max-width: 360px) {
+}

@@ -1,0 +1,14 @@
+.container {
+  margin-left: 104px;
+}
+@media (max-width: 1366px) {
+  .container {
+    margin-left: 76px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin-left: 0;
+  }
+}

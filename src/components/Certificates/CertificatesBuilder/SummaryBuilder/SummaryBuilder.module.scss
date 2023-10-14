@@ -1,0 +1,77 @@
+@import "styles/vars";
+@import "styles/mixins";
+.skeleton {
+  width: 126px;
+  height: 58px;
+  border-radius: 10px;
+}
+.container {
+  &__currency {
+    font-size: 16px;
+  }
+}
+.new {
+  @include fontBold;
+  display: flex;
+  align-items: center;
+  &__price {
+    font-size: 30px;
+    margin-right: 16px;
+    text-wrap: nowrap;
+  }
+  &__discount {
+    background-color: $pink;
+    border-radius: 4px;
+    padding: 4px 6px;
+  }
+}
+.old {
+  font-size: 20px;
+  color: $grayTextColor;
+  &__price {
+    position: relative;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      background-color: $grayTextColor;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 1px;
+      margin: auto 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .skeleton {
+    width: 102px;
+    height: 46px;
+    border-radius: 4px;
+  }
+  .container {
+    &__currency {
+      font-size: 12px;
+    }
+  }
+  .old {
+    font-size: 16px;
+    &__price {
+      &::after {
+        content: "";
+        height: 1px;
+      }
+    }
+  }
+  .new {
+    &__price {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    &__discount {
+      font-size: 12px;
+      padding: 4px 6px;
+    }
+  }
+}

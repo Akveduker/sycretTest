@@ -1,0 +1,48 @@
+.container {
+  max-width: 640px;
+}
+.title {
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 198px;
+  &--skeleton {
+    width: 100%;
+    height: 23px;
+    border-radius: 4px;
+  }
+}
+.slider {
+  max-width: 535px;
+  &__slide {
+    width: auto;
+    margin-right: 18px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &--skeleton {
+    border-radius: 10px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    max-width: 158px;
+    &--skeleton {
+      height: 19px;
+    }
+  }
+  .slider {
+    max-width: 454px;
+    &--skeleton {
+      height: 50px;
+      border-radius: 4px;
+    }
+  }
+}
+@media (max-width: 462px) {
+  .title {
+    display: none;
+  }
+}

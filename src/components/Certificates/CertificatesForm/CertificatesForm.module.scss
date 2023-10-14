@@ -1,0 +1,19 @@
+.container {
+  max-width: 398px;
+  &__title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 302px;
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+}
+@media (max-width: 360px) {
+  .container__title {
+    display: none;
+  }
+}

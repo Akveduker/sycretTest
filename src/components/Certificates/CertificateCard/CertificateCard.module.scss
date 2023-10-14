@@ -1,0 +1,93 @@
+@import "styles/vars";
+@import "styles/mixins";
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  border-radius: 25px;
+  overflow: hidden;
+  color: $whiteTextColor;
+  font-size: 38px;
+  @include fontBold;
+  &__title {
+    top: 30px;
+    right: 38px;
+    position: absolute;
+  }
+  &__bg {
+    width: 100%;
+    svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  &__price {
+    left: 38px;
+    bottom: 30px;
+    position: absolute;
+  }
+}
+.card-skeleton {
+  width: 100%;
+  max-width: 840px;
+  height: 424px;
+  border-radius: 25px;
+}
+
+@media (max-width: 1366px) {
+  .container {
+    max-width: 668px;
+    font-size: 28px;
+    &__title {
+      top: 22px;
+      right: 28px;
+    }
+    &__price {
+      left: 28px;
+      bottom: 22px;
+    }
+  }
+  .card-skeleton {
+    max-width: 668px;
+    height: 336px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 340px;
+    font-size: 18px;
+    border-radius: 10px;
+    &__title {
+      top: 8px;
+      right: 10px;
+    }
+    &__price {
+      left: 10px;
+      bottom: 8px;
+    }
+  }
+  .card-skeleton {
+    border-radius: 10px;
+    max-width: 340px;
+    height: 172px;
+  }
+}
+@media (max-width: 360px) {
+  .container {
+    max-width: 324px;
+    font-size: 18px;
+    &__title {
+      top: 8px;
+      right: 10px;
+    }
+    &__price {
+      left: 10px;
+      bottom: 8px;
+    }
+  }
+  .card-skeleton {
+    max-width: 324px;
+    height: 164px;
+  }
+}

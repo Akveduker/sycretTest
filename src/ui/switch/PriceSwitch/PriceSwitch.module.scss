@@ -1,0 +1,21 @@
+@import "styles/vars";
+.button {
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: $darkGray;
+  border-radius: 10px;
+  &--active {
+    padding: 8px 23px;
+    border: 2px solid $darkPurple;
+  }
+}
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 20px;
+    font-size: 14px;
+    &--active {
+      padding: 6.5px 18.5px;
+      border: 1.5px solid $darkPurple;
+    }
+  }
+}
